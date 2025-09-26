@@ -7,7 +7,6 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
 }
 
 .container {
@@ -30,6 +29,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
+}
+.nav img {
+  height: 100px;
+  width: auto;
 }
 
 .nav__brand h2 {
@@ -72,13 +75,17 @@ body {
 }
 
 .hero {
-    background: linear-gradient(135deg, #e53e3e, #ff6b6b);
-    color: white;
-    text-align: center;
-    padding: 150px 0 100px;
+  padding: 20rem;
+    background-image: url('img/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px; /* Ajusta la altura según lo que necesites */
+    display: flex;
+    align-items: center;
 }
-
 .hero h1 {
+  color: white;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
@@ -165,28 +172,56 @@ body {
     margin-bottom: 1rem;
 }
 
-.galeria {
-    background: #f8f8f8;
+.servicio-img {
+    width: 100%;
+    height: 180px;         /* Altura fija */
+    object-fit: cover;     /* Recorta la imagen y la adapta */
+    border-radius: 8px;    /* Bordes suaves como el card */
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+.galeria-item {
+    aspect-ratio: 1 / 1;          /* Todos los items son cuadrados */
+    width: 100%;
+    height: auto;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Imágenes cuadradas */
+.galeria-img {
+    aspect-ratio: 1 / 1;
+}
+
+/* Videos verticales, pero puedes usar cuadrado si quieres mostrar todo */
+.galeria-video {
+    width: 350px;
+    aspect-ratio: 9 / 16; /* O usa 1 / 1 para cuadrado */
+}
+
+/* Para que ambos ocupen todo el espacio visible del item */
+.galeria-img img,
+.galeria-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
 }
 
 .galeria-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);   /* 3 columnas */
+    grid-template-rows: repeat(3, 1fr);      /* 3 filas */
     gap: 1rem;
     margin-top: 2rem;
-}
-
-.galeria-item {
-    height: 200px;
-    background: #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.galeria-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    justify-content: center;
+    align-items: center;
 }
 
 .equipo-grid {
