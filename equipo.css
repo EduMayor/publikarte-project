@@ -47,6 +47,10 @@ body {
     font-size: 24px;
     margin-bottom: 2px;
 }
+.nav-brand img {
+    height: 80px;
+    width: auto;
+}
 
 .tagline {
     color: #666;
