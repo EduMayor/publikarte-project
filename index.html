@@ -20,8 +20,9 @@
                     <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
                     <li><a href="#servicios" class="nav__link">Servicios</a></li>
                     <li><a href="#galeria" class="nav__link">Galería</a></li>
-                    <li><a href="/equipo.html" class="nav__link">Equipo</a></li>
                     <li><a href="#contacto" class="nav__link">Contacto</a></li>
+                    <li><a href="#mapa" class="nav__link">Mapa</a></li>
+
                 </ul>
             </div>
         </nav>
@@ -38,7 +39,7 @@
                 <a href="https://wa.me/51996922719?text=Hola,%20quiero%20información%20sobre%20sus%20servicios%20de%20imprenta" 
                 class="btn btn-primary" target="_blank">💬 WhatsApp</a>
                 <a href="#contacto" class="btn btn-secondary">Contactanos</a>
-                <a href="https://publikarte.com.pe/index.php/tienda/" class="btn btn-secondary">Tienda Virtual</a>
+                <a href="https://publikarte.com.pe/index.php/tienda/" class="btn btn-secondary" target="_blank">Tienda Virtual</a>
             </div>
         </div>
     </section>
@@ -52,8 +53,19 @@
                 ideas con productos personalizados, de alta calidad y a precios accesibles. Ya sea para tu negocio, evento o 
                 marca personal, estamos listos para ayudarte a destacar.
             </p>
+            
+            <div class="logo-container">
+                <div>
+                    <h2>Logo actual vs logo de hace 10 años</h2>
+                    <img src="img/logo-publikarte.png" alt="Logo">
+                </div>
+                <div>
+                    <img src="img/logo10años.jpg" alt="10años" class="img10años">
+                </div>
             </div>
+        </div>
     </section>
+    
 
     <!-- Servicios -->
     <section id="servicios" class="section">
@@ -137,28 +149,42 @@
                     <p><strong>Email:</strong> ventas@publikarte.com.pe</p>
                     <p><strong>Dirección:</strong> Tarma, Junín, Perú</p>
                 </div>
-
+    
                 <form id="contact-form">
                     <div class="form-group">
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
                     </div>
-
+    
                     <div class="form-group">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-
+    
                     <div class="form-group">
                         <label for="mensaje">Mensaje:</label>
                         <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos sobre tu proyecto..."></textarea>
                     </div>
-
+    
                     <button type="submit" class="btn-submit">Enviar Mensaje</button>
                 </form>
             </div>
+    
+            <div class="mapa-container" id="mapa">
+                <h3>Nuestra Ubicación</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62256.89194411841!2d-75.7114!3d-11.4181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e9630e6c1c7c1%3A0x4b9a2c7b8c7b1c8b!2sTarma%2C%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1632847382847!5m2!1ses!2spe" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
     </section>
+    
 
     <!-- Footer -->
     <footer class="footer">
